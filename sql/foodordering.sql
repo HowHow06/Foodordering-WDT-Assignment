@@ -125,9 +125,9 @@ CREATE TABLE IF NOT EXISTS `customer` (
 --
 
 INSERT INTO `customer` (`cus_id`, `cus_name`, `username`, `password`, `email`, `contact`, `gender`) VALUES
-(8, 'Sally Wong', 'customer2', '$2y$10$NQ3t1EhKqJuL0g11iX6N.OnrVMKU1cJW7emwy3uYqMADE8J4ggelO', 'sally@mail.com', '6098765432', 'Female'),
-(7, 'Brown Wong', 'customer1', '$2y$10$tpyvHnrlXawQBvKUUZ6x6O3EUFEta4lIOU5qZ/Rf9h0mGhgT/s/Su', 'brown@mail.com', '+6012345678', 'Male'),
-(9, 'Bear Wong', 'customer3', '$2y$10$nvLWViJos7G2RIUYPs0G0.z3JdnTWwgo.QpFTmlhcU6wEQSaXfT16', 'bear@mail.com', '6033442133', 'Male');
+(1, 'Sally Wong', 'customer2', '$2y$10$NQ3t1EhKqJuL0g11iX6N.OnrVMKU1cJW7emwy3uYqMADE8J4ggelO', 'sally@mail.com', '6098765432', 'Female'),
+(2, 'Brown Wong', 'customer1', '$2y$10$tpyvHnrlXawQBvKUUZ6x6O3EUFEta4lIOU5qZ/Rf9h0mGhgT/s/Su', 'brown@mail.com', '+6012345678', 'Male'),
+(3, 'Bear Wong', 'customer3', '$2y$10$nvLWViJos7G2RIUYPs0G0.z3JdnTWwgo.QpFTmlhcU6wEQSaXfT16', 'bear@mail.com', '6033442133', 'Male');
 
 -- --------------------------------------------------------
 

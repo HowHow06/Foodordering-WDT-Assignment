@@ -352,7 +352,9 @@ function update_orderstatus($order_id, $order_status)
 //to display at the nav bar notification icon
 function showrequestnumber()
 {
-    $sql = "SELECT COUNT(request_id) AS count FROM `order_cancel_request` WHERE `request_status` LIKE 'Pending'
+    $sql = "SELECT COUNT(request_id) AS count 
+    FROM `order_cancel_request` 
+    WHERE `request_status` LIKE 'Pending'
     ";
     $num = 0;
     include('conn.php');
