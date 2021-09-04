@@ -71,7 +71,11 @@ if (havesession()) {
                     </div>
                     <div class="col-md-5 forgot"><a href="adminforgot.php">Forgot Password?</a></div>
                 </div>
-
+                <div class="row">
+                    <div class="col forgot">
+                        For testing purpose, use "admin1" as username, "admin" as password
+                    </div>
+                </div>
                 <form action="adminlogin.php" method="POST" class="col-md-12">
                     <div class="formctrl form-group">
                         <input type="text" name="username" class="form-control" placeholder="UserID or Email Address" required>

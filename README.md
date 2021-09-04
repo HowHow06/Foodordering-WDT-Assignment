@@ -4,6 +4,12 @@ Food Delivery System (Website)
 ##  TO NOTE THAT
 THE FILE IS READ ONLY
 
+---
+## Important
+This is a fork from the original repo. Further modification is done by Howard in order to host this app on Heroku.
+
+---
+
 
 <b>From: heiguy123</b><br>
 1. Add encryted password function.<br>

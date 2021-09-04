@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `password` char(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `last_login` datetime DEFAULT NULL,
   PRIMARY KEY (`admin_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `admin`
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   `add_id` int(11) NOT NULL,
   `total` decimal(10,2) NOT NULL,
   PRIMARY KEY (`cart_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `cart`
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `cart_detail` (
   `option` varchar(255) NOT NULL,
   `subtotal` decimal(10,2) NOT NULL,
   PRIMARY KEY (`cartdetail_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `cart_detail`
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `contact` varchar(20) NOT NULL,
   `gender` varchar(10) NOT NULL,
   PRIMARY KEY (`cus_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `customer`
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `deliverable_postcode` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `postcode` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=369 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `deliverable_postcode`
@@ -530,7 +530,7 @@ CREATE TABLE IF NOT EXISTS `food` (
   `price` decimal(10,2) NOT NULL,
   `option` varchar(255) NOT NULL,
   PRIMARY KEY (`food_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `food`
@@ -569,7 +569,7 @@ CREATE TABLE IF NOT EXISTS `food_category` (
   `category_name` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   PRIMARY KEY (`cate_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `food_category`
@@ -598,7 +598,7 @@ CREATE TABLE IF NOT EXISTS `order` (
   `time` datetime NOT NULL,
   `add_id` int(11) NOT NULL,
   PRIMARY KEY (`order_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `order`
@@ -627,7 +627,7 @@ CREATE TABLE IF NOT EXISTS `order_cancel_request` (
   `time` datetime NOT NULL,
   `admin_id` int(11) NOT NULL,
   PRIMARY KEY (`request_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `order_cancel_request`
@@ -654,7 +654,7 @@ CREATE TABLE IF NOT EXISTS `order_detail` (
   `option` varchar(255) NOT NULL,
   `subtotal` decimal(10,2) NOT NULL,
   PRIMARY KEY (`orderdetail_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `order_detail`
@@ -682,7 +682,7 @@ CREATE TABLE IF NOT EXISTS `order_status` (
   `status_id` int(11) NOT NULL AUTO_INCREMENT,
   `order_status` varchar(255) NOT NULL,
   PRIMARY KEY (`status_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `order_status`
@@ -709,7 +709,7 @@ CREATE TABLE IF NOT EXISTS `payment` (
   `paid_amount` decimal(10,2) NOT NULL,
   `payment_status` varchar(255) NOT NULL,
   PRIMARY KEY (`payment_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `payment`
@@ -735,7 +735,7 @@ CREATE TABLE IF NOT EXISTS `payment_method` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `payment_method` varchar(40) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `payment_method`
@@ -756,7 +756,7 @@ CREATE TABLE IF NOT EXISTS `request_status` (
   `status_id` int(11) NOT NULL AUTO_INCREMENT,
   `request_status` varchar(255) NOT NULL,
   PRIMARY KEY (`status_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `request_status`
@@ -781,7 +781,7 @@ CREATE TABLE IF NOT EXISTS `user_address` (
   `city` varchar(255) NOT NULL,
   `postcode` varchar(255) NOT NULL,
   PRIMARY KEY (`add_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM   DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user_address`
