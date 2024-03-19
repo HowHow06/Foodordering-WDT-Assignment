@@ -28,10 +28,3 @@ The Food Ordering & Delivery System is a comprehensive web application developed
 3. **Run the Application**:
    - Host the application on a PHP supported server.
    - Navigate to the project URL through a web browser.
-
-## Project Structure
-
-- `admin` - Administrative functionalities and dashboard.
-- `includes` - PHP scripts and utilities for functionality.
-- `public` - Front-end files, including HTML, CSS, and JavaScript.
-- `sql` - Database schema and initial setup scripts.
