@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Food Ordering & Delivery System is a comprehensive web application developed as part of a diploma assignment. This project is meticulously crafted using pure PHP, showcasing a conceptual model for a food ordering and delivery platform. It demonstrates the practical application of Object-Oriented Programming (OOP), focusing on the utilization of design patterns and adherence to SOLID principles for clean and maintainable code.
+The Food Ordering & Delivery System is a comprehensive web application developed as part of a diploma assignment. This project is meticulously crafted using pure PHP, showcasing a conceptual model for a food ordering and delivery platform.
 
 ## Key Features
 
